@@ -1,0 +1,27 @@
+<h3><a class="btn btn-secondary" href="/employee"><i class="fa fa-plus"></i>Create New</a>Employee list</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        {{#each list}}
+        <tr>
+            <td>{{this.FullName}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.PhoneNo}}</td>
+            <td>{{this.city}}</td>
+            <td>
+                <a href="/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/delete/{{this._id}}"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+        
+    </tbody>
+</table>

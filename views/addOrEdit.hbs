@@ -1,0 +1,25 @@
+<h3>{{{viewTitle}}}</h3>
+
+<form autocomplete="off" action="/employee" method="POST">
+<input type="hidden" name="_id" value="{{{employee._id}}}">
+    <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" name="FullName" class="form-control" placeholder="Full Name" value="{{employee.FullName}}" required>
+    </div>
+    <div class="form-group">
+        <label>E-mail</label>
+        <input type="email" name="email" class="form-control" placeholder="E-mail" value="{{employee.email}}" required>
+    </div>
+    <div class="form-row">
+        <label>Phone number</label>
+        <input type="number" name="PhoneNo" class="form-control" placeholder="mobile No." value="{{employee.PhoneNo}}" required>
+    </div>
+    <div class="form-row">
+        <label>city</label>
+        <input type="text" name="city" class="form-control" placeholder="city" value="{{employee.city}}" required>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i>Submit</button>
+        <a class="btn btn-secondary" href="/list"><i class="fa fa-list-alt"></i>View All</a> 
+    </div>
+</form>
