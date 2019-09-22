@@ -4,7 +4,7 @@ const Employee = mongoose.model('employees');
 
 module.exports = function(app){
     app.get('/employee', (req, res) => {
-        res.render('addOrEdit', {viewTitle: "Insert Employee"});
+        res.render('addOrEdit', {viewTitle: "Insert Student"});
     });
 
     app.post('/employee', (req, res) => {
