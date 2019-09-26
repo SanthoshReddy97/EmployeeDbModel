@@ -1,0 +1,10 @@
+const mongoose  = require('mongoose');
+
+
+
+mongoose.connect('', {useNewUrlParser: true}, (err) => {
+    if(!err) {console.log("mongodb connection successful")}
+    else {console.log("mongodb connection failed")}
+});
+
+require('./employeemodel')

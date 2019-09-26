@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?compositeMetadataRepository version='1.0.0'?>
+<repository name='&quot;Kotlin Development Tools&quot;'
+    type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
+  <children size='1'>
+    <child location='http://dl.bintray.com/jetbrains/kotlin/eclipse-plugin/0.8.18'/>
+  </children>
+</repository>
