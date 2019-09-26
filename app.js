@@ -25,10 +25,10 @@ res.status(200).send({"msg": "Employees Database"})
 });
 employeeController(app);
 
+
 app.get("/hi", (req, res) => {
     res.status(200).send({"msg":"hellow everyone"})
-})
-
+});
 
 app.listen(3000, () => {
     console.log('you are listening to the port 3000')
